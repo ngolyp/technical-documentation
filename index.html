@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>My Documentation Page</title>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <header>Object Oriented Programming Concepts</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li>
+                <a class="nav-link" href="#Abstraction">Abstraction</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Encapsulation">Encapsulation</a>
+            </li>
+            <li><a class="nav-link" href="#Inheritance">Inheritance</a></li>
+            <li><a class="nav-link" href="#Polymorphism">Polymorphism</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>What is Object Oriented Programming?</p>
+            <p>Object-oriented programming (OOP) refers to a type of computer programming (software design) in which
+                programmers
+                define not only the data type of a data structure, but also the types of operations (functions) that can
+                be applied
+                to the data structure. </p>
+
+            <p>In this way, the data structure becomes an object that includes both data and functions.
+                In addition, programmers can create relationships between one object and another. For example,
+                objects can inherit characteristics from other objects.</p>
+
+            <p>There are four main concepts in object-oriented programming:</p>
+
+            <ul>
+                <li>Abstraction</li>
+                <li>Encapsulation</li>
+                <li>Inheritance</li>
+                <li>Polymorphism</li>
+            </ul>
+        </section>
+        <hr>
+        <section class="main-section" id="Abstraction">
+            <header>Abstraction</header>
+            <p>Abstraction means using simple things to represent complexity.
+                We all know how to turn the TV on, but we don’t need to know how it works in order to enjoy it.
+                In Java, abstraction means simple things like objects, classes, and variables represent more complex
+                underlying
+                code and data. This is important because it lets avoid repeating the same work multiple times.
+            </p>
+
+            <p>Abstraction as an OOP concept in Java works by letting programmers create useful, reusable tools.
+                For example, a programmer can create several different types of objects.
+                These can be variables, functions, or data structures. Programmers can also create different classes of
+                objects. These are ways to define the objects.
+            </p>
+            <p>
+                For instance, a class of variable might be an address. The class might specify that each address
+                object shall have a name, street, city, and zip code. The objects, in this case, might be employee
+                addresses, customer addresses, or supplier addresses.
+            </p>
+<!--             <p>For example:</p>
+            <code>var address: {
+                employee: string,
+                customer: string,
+                supplier: string
+            };
+            </code> -->
+        </section>
+        <hr>
+        <section class="main-section" id="Encapsulation">
+            <header>Encapsulation</header>
+            <p>
+                This is the practice of keeping fields within a class private,
+                then providing access to them via public methods. It’s a protective
+                barrier that keeps the data and code safe within the class itself. This way, we can re-use objects like
+                code components or variables without allowing open access to the data system-wide.
+            </p>
+
+            <p>These are different types of fields you can have:</p>
+            <ul>
+                <li>public</li>
+                <li>private</li>
+                <li>protected</li>
+                <li>package-private</li>
+            </ul>
+            <p>
+                Encapsulation lets us re-use functionality without jeopardizing security. It’s a powerful OOP concept in
+                Java because it helps us save a lot of time. For example, we may create a piece of code that calls
+                specific data from a database. It may be useful to reuse that code with other databases or processes.
+                Encapsulation lets us do that while keeping our original data private. It also lets us alter our
+                original code without breaking it for others who have adopted it in the meantime.
+            </p>
+            <p>For example:</p>
+            <code>
+                    //save as Student.java
+                    public class Student {
+                     private String name;
+                     public String getName() {
+                      return name;
+                     }
+                     public void setName(String name) {
+                      this.name = name
+                     }
+                    }
+                    //save as Test.java
+                    class Test {
+                     public static void main(String[] args) {
+                      Student s = new Student();
+                      s.setName(“vijay”);
+                      System.out.println(s.getName());
+                     }
+                    }
+                </code>
+
+        </section>
+        <hr>
+        <section class="main-section" id="Inheritance">
+            <header>Inheritance</header>
+            <p>
+                This is a special feature of Object Oriented Programming in Java. It lets programmers create new classes
+                that share some of the attributes of existing classes. This lets us build on previous work without
+                reinventing the wheel.
+            </p>
+
+            <p>
+                Inheritance is another labor-saving Java OOP concept. It works by letting a new class adopt the
+                properties of another. We call the inheriting class a subclass or a child class. The original class is
+                often called the parent. We use the keyword extends to define a new class that inherits properties from
+                an old class.
+            </p>
+
+            <p>For example:</p>
+            <p>In parent class</p>
+            <code>
+                public class Person {
+                    ...
+                }
+            </code>
+            <p>In child class</p>
+            <code>
+                public class Student extends Person {
+                    ...
+                }
+            </code>
+        </section>
+        <hr>
+        <section class="main-section" id="Polymorphism">
+            <header>Polymorphism</header>
+            <p>
+                This Java OOP concept lets programmers use the same word to mean different things in different contexts.
+                One form of polymorphism in Java is method overloading. That’s when different meanings are implied by
+                the code itself. The other form is method overriding. That’s when the different meanings are implied by
+                the values of the supplied variables.
+            </p>
+
+            <p>
+                Polymorphism in Java works by using a reference to a parent class to affect an object in the child
+                class. We might create a class called “horse” by extending the “animal” class. That class might also
+                implement the “professional racing” class. The “horse” class is “polymorphic,” since it inherits
+                attributes of both the “animal” and “professional racing” class.
+            </p>
+
+            <p>
+                Two more examples of polymorphism in Java are method overriding and method overloading.
+            </p>
+
+            <p>
+                In <strong>method overriding</strong>, the child class can use the OOP polymorphism concept to override
+                a method of its
+                parent class. That allows a programmer to use one method in different ways depending on whether it’s
+                invoked by an object of the parent class or an object of the child class.
+            </p>
+
+            <p>
+                In <strong>method overloading</strong>, a single method may perform different functions depending on the
+                context in which
+                it’s called. That is, a single method name might work in different ways depending on what arguments are
+                passed to it.
+            </p>
+
+            <p>For example in method overiding:</p>
+            <p>In parent class</p>
+            <code>
+                public class Person {
+                    public void talk() {
+                        System.out.println(“Hello!”);
+                    }
+                }
+            </code>
+            <p>In child class</p>
+            <code>
+                public class Student extends Person {
+                    public void talk() {
+                        System.out.println(“What's Up!”);
+                    }
+                }
+            </code>
+
+            <p>An example in method overloading:</p>
+            <code>
+                public class Person {
+                    public void eat() {
+                        System.out.println(“I am eating!”); 
+                    }
+                    public void eat(food) {
+                        System.out.println(“I am eating ” + food + "!"); 
+                    }
+                }
+            </code>
+        </section>
+        <hr>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <ul>
+                <li>
+                    All the documentation in this page is taken from
+                    <a href="https://stackify.com/oops-concepts-in-java/" target="_blank">Stackify</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
